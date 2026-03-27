@@ -371,26 +371,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-
-    function applySmartScaling() {
-        const targetWidth = 1905;
-        const scaleWidth = window.innerWidth;
-        const wrapper = document.querySelector('.yIDCqA') || document.body;
-
-        if (scaleWidth < targetWidth) {
-            const zoomLevel = scaleWidth / targetWidth;
-            wrapper.style.zoom = zoomLevel;
-            document.documentElement.style.overflowX = 'hidden';
-        } else {
-            wrapper.style.zoom = 1;
-            document.documentElement.style.overflowX = 'hidden';
-        }
-    }
-
-    applySmartScaling();
-    window.addEventListener('resize', applySmartScaling);
-
-    console.log(`🐻 Bear Effects v5.1 Restored Loaded:
+    // ─────────────────────────────────────────
+    //  LOG
+    // ─────────────────────────────────────────
+    console.log(`🐻 Bear Effects v6.0 Natively Responsive Loaded:
   • ${grassImages.length} grass elements swaying
   • ${PARTICLE_COUNT} particles active
   • Cursor trail: active
